@@ -1,0 +1,15 @@
+@import url('https://fonts.google.com/specimen/Roboto+Mono?sidebar.open=true&selection.family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700');
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin:0;
+    padding:0;
+}
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: $s-b;
+}

@@ -1,0 +1,45 @@
+
+body{
+    .header{
+        display: inline;
+    }
+    .header__nav {
+        background-color: transparentize($color: #000000, $amount: 0.2);
+        top: 0;
+        left:0;
+        color:$h_br;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        
+        .header__nav-container{
+            height: 100%;
+            display: flex;     
+            margin: auto;
+            //vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            .header__nav-list{
+                margin: 0;
+                .header__nav-list-element{
+                    font-size: xx-large;;
+                    text-align: center;
+                    padding:0
+                }
+                .header__nav-list-element:hover{
+                    //retocar mas tarde
+                    color: black;  
+                }
+                .header__nav-list-element-enlace{
+                    text-decoration:none;
+                    color:$h_br;
+                }
+                .header__nav-list-element-enlace:hover{
+                    //retocar mas tarde
+                    color: black;  
+                }
+            }
+        }
+    }
+}
