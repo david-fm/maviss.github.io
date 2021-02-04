@@ -4,6 +4,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-size: 1.6rem;
 }
 body
 {
@@ -50,6 +51,7 @@ body
     width: 95%;
     display: grid;
     
+
     grid-template-rows: repeat(auto-fill, minmax(400px, max-content));
     grid-template-columns: repeat(auto-fill, minmax(max-content, max-content));
 }
@@ -88,13 +90,17 @@ body
 }
 @media (orientation:landscape)
 {
+    *
+    {
+        font-size: 1rem;
+    }
     .flex_container
     {
         margin-left: auto;
         margin-right: auto;
         width: 95%;
         display: grid ;
-
+        
         
         grid-template-rows: repeat(auto-fill, minmax(max-content, max-content));
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
