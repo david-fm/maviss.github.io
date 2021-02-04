@@ -41,7 +41,7 @@ body
 
 .img{
     object-fit: cover;
-    max-width: 100%;
+    max-height: 70vh;
 }
 .flex_container
 {
@@ -51,20 +51,19 @@ body
     display: grid;
     
     grid-template-rows: repeat(auto-fill, minmax(400px, max-content));
-    grid-template-columns: repeat(auto-fill, minmax(350px, 100%));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, max-content));
 }
-.prueba
-{
-    background-image: url("../assets/media/img/Galery/_MG_4494.jpg");
-    background-size: cover;
-}
+
 .flex_child
 {
     width: 100%;
     max-height: max-content;
+    max-width: max-content;
     position: relative;
     overflow: hidden;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 
     border-radius: 25px;
     box-shadow: 0px 0px 15px #000000;
@@ -86,4 +85,20 @@ body
 .flex_child:hover
 {
     transform: translateY(-10px);
+}
+@media (orientation:landscape)
+{
+    .flex_container
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        display: grid ;
+
+        
+        grid-template-rows: repeat(auto-fill, minmax(max-content, max-content));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+        grid-gap: 10px;
+    }
 }
