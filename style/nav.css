@@ -13,7 +13,7 @@
 
     z-index: 100;
     transition-property: background;
-    transition-duration: 3s;
+    transition-duration: 1.7s;
 }
 .firma_a
 {
@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: #000000aa;
+    background-color: #000000bf;
 
     z-index: 50;
     transition-property: top;
