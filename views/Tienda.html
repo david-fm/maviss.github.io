@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paisajes</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>Tienda</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../style/normalize.css">
-        <link rel="stylesheet" href="../style/estilo-paisajes.css">
+        <link rel="stylesheet" href="../style/estilo-tienda.css">
         <link rel="stylesheet" href="../style/nav.css">
     </head>
     <body>
         <header class="flex_header">
-            <a href="../index.html">
+            <a href="../index.html" class="backward">
                 <svg class="flechita" xmlns="http://www.w3.org/2000/svg" width="16.363" height="26.963" viewBox="0 0 16.363 26.963">
-                    <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
+                <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
                 </svg>
             </a>
             <a href="../index.html" class="firma_a"><img src="../assets/media/img/Firma5_0.png" alt="Maviss Firm" class="firma_maviss"></a>
             <nav class="nav">
                 <svg class="bars-solid" xmlns="http://www.w3.org/2000/svg" width="32.28" height="25.745" viewBox="0 0 32.28 25.745">
                     <path id="bars-solid-2" data-name="bars-solid" d="M1.153,64.729H31.127a1.105,1.105,0,0,0,1.153-1.051V61.051A1.105,1.105,0,0,0,31.127,60H1.153A1.105,1.105,0,0,0,0,61.051v2.627A1.105,1.105,0,0,0,1.153,64.729Zm0,10.508H31.127a1.105,1.105,0,0,0,1.153-1.051V71.559a1.105,1.105,0,0,0-1.153-1.051H1.153A1.105,1.105,0,0,0,0,71.559v2.627A1.105,1.105,0,0,0,1.153,75.237Zm0,10.508H31.127a1.105,1.105,0,0,0,1.153-1.051V82.067a1.105,1.105,0,0,0-1.153-1.051H1.153A1.105,1.105,0,0,0,0,82.067v2.627A1.105,1.105,0,0,0,1.153,85.745Z" transform="translate(0 -60)" fill="#e8f5ff"/>
-                </svg>                  
+                </svg>               
             </nav>
         </header>
         <nav>
@@ -33,29 +33,26 @@
                 </ul>
             </div>
         </nav>
-        <main class="main">
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4494.jpg" alt="" class="contenedor-img">
+        <main class="flex_container">
+            <section class="flex_child">
+                <h2 class="flex_child-h2"> Postales</h2>
+                <div class= "flex_child-img_container">
+                    <img src="../assets/media/img/Galery/_MG_5340 (1).jpg" alt="" class="flex_child-img">
+                </div>
             </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4496.jpg" alt="" class="contenedor-img">
+            <section class="flex_child">
+                <h2 class="flex_child-h2">Dibujos</h2>
+                <div class= "flex_child-img_container">
+                    <img src="../assets/media/img/Galery/_MG_5378-2.jpg" alt="" class="flex_child-img">
+                </div>
             </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4629.jpg" alt="" class="contenedor-img">
-            </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4637 (1).jpg" alt="" class="contenedor-img">
-            </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4651.jpg" alt="" class="contenedor-img">
-            </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4663.jpg" alt="" class="contenedor-img">
-            </section>
-            <section class="contenedor">
-                <img src="../assets/media/img/Galery/_MG_4671.jpg" alt="" class="contenedor-img">
+            <section class="flex_child" id="flex_child_end">
+                <h2 class="flex_child-h2">Lienzos</h2>
+                <div class= "flex_child-img_container">
+                    <img src="../assets/media/img/Galery/_MG_5355.jpg" alt="" class="flex_child-img">
+                </div>
             </section>
         </main>
         <script src="../scripts/topBar.js"></script>
-    </body>
+    </body> 
 </html>

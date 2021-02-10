@@ -1,12 +1,20 @@
 const img = document.querySelector(".background");
-
-if( (window.screen.width)/(window.screen.height) > 0.65)
+addEventListener("resize", responsive)
+responsive();
+function responsive()
 {
-    img.setAttribute("src", "./assets/media/img/Galery/_MG_5405.jpg");
-}
-if( (window.screen.width)/(window.screen.height) > 1.1)
-{
-    img.setAttribute("src", "./assets/media/img/Galery/_MG_5381.jpg");
-    img.style.height= "auto";
-    img.setAttribute("width", "100%");
+    let width = window.screen.availWidth;
+    let height = window.screen.availHeight;
+    if( (width)/(height) < 0.65)
+    {
+        img.setAttribute("src", "./assets/media/img/_MG_4679.jpg");
+    }
+        else if( ((width)/(height) > 0.65) && ((width)/(height) < 1.1))
+        {
+            img.setAttribute("src", "./assets/media/img/Galery/_MG_5405.jpg");
+        }
+            else if( (width)/(height) > 1.1 )
+            {
+                img.setAttribute("src", "./assets/media/img/Galery/_MG_5381.jpg");
+            }
 }

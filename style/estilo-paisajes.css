@@ -9,26 +9,6 @@ body
 {
     background-color: #4e5463;
 }
-.header
-{
-    position: fixed;
-    height: 10vh;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    z-index: 100;
-}
-.firma_a
-{
-    height: 80%;
-}
-.firma_maviss
-{
-    height: 100%;
-}
 .main
 {
     position: relative;
