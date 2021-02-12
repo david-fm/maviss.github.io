@@ -2,10 +2,14 @@
 <html lang="es">
     <head>
         <title>Maviss</title>
+        <link rel="icon" type="image/x-icon" href="./assets/media/img/icon-2.jpeg">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script src="./scripts/efectoEscritura.js"></script>
+        <link rel="stylesheet" href="style/estilo-carta.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
@@ -18,21 +22,25 @@
                 </head>
                 <main class="container-main">
                     <section>
-                        <a href="./views/La-Cueva.html" class = "enlace"><h2 id= "cueva">La Cueva</h2></a>
+                        <a href="./views/Nankurunaisa.html" class = "enlace"><h2 id= "nankurunaisa">Nankurunaisa</h2></a>
                     </section>
                     <section>
-                        <a href="./views/paisajes.html" class = "enlace"><h2 id = "paisajes">Paisajes</h2></a>
+                        <a href="./views/Portfolio.html" class = "enlace"><h2 id = "portfolio">Portfolio</h2></a>
                     </section>
                 </main>
             </div>
-            <!--<div class="charla">
+            <div class="charla">
                 <article class = "charla-article">
                     <p class="charla-title"><b>Bienvenido</b></p>
-                    <p class="charla-main">Acompáñame por la senda que nos llevará lejos de la cueva, lejos de este dolor interno, esta opresión en el pecho</p>
-                    <p class="charla-mini">clica para continuar</p>
+                    <p class="charla-main" >
+                        <script src= "./scripts/lib/typed.js"></script> 
+                        <span id="spannnn"></span>
+                        <script src="scripts/efectoEscritura.js"></script> 
+                    </p>
                 </article>
-            </div>-->
+            </div>
         </div>
+        <script src="./scripts/efectoCharla.js"></script>
         <script src="./scripts/changeImg.js"></script>
     </body>       
 </html>

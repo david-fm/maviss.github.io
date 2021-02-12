@@ -56,7 +56,7 @@ h1
 {
     text-align: center;
 }
-#cueva
+#nankurunaisa
 {
     padding: 2px;
     position:relative;
@@ -67,12 +67,12 @@ h1
     transition-duration: 1s;
     
 }
-#cueva:hover
+#nankurunaisa:hover
 {
     transform: translateY(-2px);
     text-shadow: 0px 0px 7px rgba(0, 0, 0, 1), 0px 0px 7px rgba(0, 0, 0, 1), 0px 0px 7px rgba(0, 0, 0, 1) ;
 }
-#paisajes
+#portfolio
 {
     position: relative;
     padding:2px;
@@ -83,7 +83,7 @@ h1
     transition-property: text-shadow, transform;
     transition-duration: 1s;
 }
-#paisajes:hover
+#portfolio:hover
 {
     transform: translateY(-2px);
     text-shadow: 0px 0px 7px rgba(230, 230, 230, 1), 0px 0px 6px rgba(230, 230, 230, 1);
@@ -93,7 +93,7 @@ h1
 
 .charla
 {
-    position: absolute;
+    position:absolute;
     top:0;
     left:0;
 
@@ -129,10 +129,6 @@ h1
 .charla-main
 {
     margin-bottom: 0.75em;
-}
-.charla-mini
-{
-    font-size: 0.7em;
 }
 
 @media (orientation:landscape)
