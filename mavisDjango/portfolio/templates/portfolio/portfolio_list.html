@@ -1,0 +1,16 @@
+{% extends 'Portfolio.html' %}
+{% block content %}
+    {% for object in object_list %}
+        <a href="{% url 'portfolio:detalle' object.id %}">
+            <section class="flex_child ">
+                <img src="{{object.img.url}}" alt="{{ object.titulo }}" class = "img">
+                <div class="text">
+                    <h2>{{ object.titulo }}</h2>
+                    <div class="paragraph">
+                        <p>{{ object.texto }}</p>
+                    </div>
+                </div>
+            </section>
+        </a>
+    {% endfor %}
+{% endblock content %}

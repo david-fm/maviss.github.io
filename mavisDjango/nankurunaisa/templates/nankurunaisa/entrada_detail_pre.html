@@ -1,0 +1,12 @@
+{% extends 'Nankurunaisa-base.html' %}
+{% block content %}
+        <section class="flex_child ">
+            <img src="{{object.img.url}}" alt="{{ object.titulo }}" class = "img">
+            <div class="text">
+                <h2>{{ object.titulo }}</h2>
+                <div class="paragraph">
+                    <p>{{ enobject.trada.texto }}</p>
+                </div>
+            </div>
+        </section>
+{% endblock content %}
