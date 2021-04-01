@@ -12,10 +12,7 @@ body
 
 /**/
 
-.img{
-    object-fit: cover;
-    max-height: 70vh;
-}
+
 .flex_container
 {
     position: relative;
@@ -30,53 +27,31 @@ body
 
     grid-template-rows: repeat(auto-fill, minmax(400px, max-content));
     grid-template-columns: repeat(auto-fill, minmax(max-content, max-content));
-}
 
+}
+.flex
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .flex_child
 {
-    width: 100%;
-    max-height: max-content;
-    max-width: max-content;
+    width: fit-content;
+    height: min-content;
     position: relative;
     overflow: hidden;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
 
     box-shadow: 0px 0px 15px #000000;
     transition-property: transform;
     transition-duration: 1s;
 }
-.text
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-
-    background: #ffffffb6;
-    text-align: center;
-}
-.text h2
-{
-    padding-top: 2%;
-    padding-bottom: 2%;
-
-    font-size: 8vw;
-}
-.paragraph
-{
-    text-align:center;
-    padding-right: 5%;
-    padding-left: 5%;
-    height: 60%;
-
-    overflow-y: auto;
-}
-.paragraph p
-{
-    font-size: 5vw;
+.img{
+    object-fit: cover;
+    max-width:400px;
 }
 .flex_child:hover
 {

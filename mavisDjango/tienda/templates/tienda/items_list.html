@@ -1,0 +1,14 @@
+{% extends 'Tienda.html' %}
+{% block content %}
+    {% for object in object_list %}
+        <!--<a href="{% url 'portfolio:detalle' object.id %}">-->
+        <div class="flex">
+            <h2 class = "titulo">{{ object.titulo }}</h2>
+            <section class="flex_child ">
+                <img src="{{object.img.url}}" alt="{{ object.titulo }}" class = "img">
+            </section>
+        </div>
+            
+        <!--</a>-->
+    {% endfor %}
+{% endblock content %}
