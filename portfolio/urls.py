@@ -10,3 +10,4 @@ urlpatterns = [
     path('paisajes/<pk>/', VistaDetallePaisajes.as_view(), name = 'paisajes_detalle'),
     path('', VistaPortfolio.as_view(), name= 'portfolio'),
 ]
+#cambio
