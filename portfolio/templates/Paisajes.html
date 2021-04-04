@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'normalize.css' %}">
         <link rel="stylesheet" href="{% static 'nav.css' %}">
-        <link rel="stylesheet" href="{% static 'estilo-tienda.css' %}">
+        <link rel="stylesheet" href="{% static 'estilo-portfolio.css' %}">
     </head>
     <body>
         
@@ -35,22 +35,9 @@
             </div>
         </nav>
         <div class="flex_container">
-            <a href="https://maviss.art/Portfolio/Paisajes/">    
-                <div class="flex">
-                    <h2 class = "titulo">Paisajes</h2>
-                    <section class="flex_child ">
-                        <img src="{% static 'img/Galery/_MG_4472.jpg' %}" alt="Paisaje azul desde la cima de una montaña, hay una pequeña isla de color marron" class = "img">
-                    </section>
-                </div>
-            </a>
-            <a href="https://maviss.art/Portfolio/Urbano/">
-                <div class="flex">
-                    <h2 class = "titulo">Urbano</h2>
-                    <section class="flex_child ">
-                        <img src="{% static 'img/Galery/_MG_5340(1).jpg' %}" alt="Tiovivo en la noche con luces girando" class = "img">
-                    </section>
-                </div>
-            </a>
+            
+            {% block content %}
+            {% endblock %}
         </div>
         <script src="{% static 'js/topBar.js' %}"></script>
     </body> 
