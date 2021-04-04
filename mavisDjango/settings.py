@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(o8t^%c7jc2++ltv(740v(y+nevoqsajx1$k%&)*6y%f51pixj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['maviss-art.herokuapp.com','www.maviss.art', '.maviss.art']
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'mavisDjango.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -94,7 +94,7 @@ DATABASES = {
         default= config('DATABASE_URL')
     )
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
