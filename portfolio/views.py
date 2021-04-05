@@ -2,7 +2,7 @@ from django.views.generic import TemplateView, ListView, DetailView
 from .models import Paisajes, Urbano
 
 class VistaPortfolio(TemplateView):
-    template_name='Portfolio.html'
+    template_name='index.html'
 
 class VistaDetalleUrbano(DetailView):
     model = Urbano
