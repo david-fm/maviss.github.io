@@ -1,0 +1,140 @@
+*
+{
+    font-family: 'Source Code Pro', sans-serif;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+.megacontainer
+{
+    position: relative;
+    width:100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+.background
+{
+    height: 100%;
+    object-fit: cover;
+}
+.container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1
+{
+    position: absolute;
+    height: 0.1px;
+    width: 0.1px;
+    overflow: hidden;
+}
+.firma_maviss
+{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: rotate(-5deg);
+}
+.enlace
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    width: fit-content;
+}
+.container-main
+{
+    text-align: center;
+}
+#nankurunaisa
+{
+    padding: 2px;
+    position:relative;
+
+    font-size: 1.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    transition-property: text-shadow, transform;
+    transition-duration: 1s;
+    
+}
+#nankurunaisa:hover
+{
+    transform: translateY(-2px);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1), 0px 0px 7px rgba(0, 0, 0, 1), 0px 0px 7px rgba(0, 0, 0, 1) ;
+}
+#portfolio
+{
+    position: relative;
+    padding:2px;
+    margin-top: 5px;
+
+    font-size: 1em;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+    transition-property: text-shadow, transform;
+    transition-duration: 1s;
+}
+#portfolio:hover
+{
+    transform: translateY(-2px);
+    text-shadow: 0px 0px 7px rgba(230, 230, 230, 1), 0px 0px 6px rgba(230, 230, 230, 1);
+}
+
+/*Conversacion Maviss*/
+
+.charla
+{
+    position:absolute;
+    top:0;
+    left:0;
+
+    height:100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 20;
+
+    background-color: #ffffff52;
+}
+.charla-article
+{
+    width: 80%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    z-index: inherit;
+}
+.charla-article p
+{
+    z-index: inherit;
+}
+.charla-title
+{
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+.charla-main
+{
+    margin-bottom: 0.75em;
+}
+
+@media (orientation:landscape)
+{
+    .background
+    {
+        width: 100%;
+    }
+}

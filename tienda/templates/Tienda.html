@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nankurunaisa</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'nav.css' %}">
+        <link rel="stylesheet" href="{% static 'estilo-tienda.css' %}">
+    </head>
+    <body>
+        
+        <header class="flex_header">
+            <a href="{% url 'main:main' %}" class="backward">
+                <svg class="flechita" xmlns="http://www.w3.org/2000/svg" width="16.363" height="26.963" viewBox="0 0 16.363 26.963">
+                <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
+                </svg>
+            </a>
+            <a href="{% url 'main:main' %}" class="firma_a"><img src="{% static 'img/Firma5_0.png' %}" alt="Maviss Firm" class="firma_maviss"></a>
+            <nav class="nav">
+                <svg class="bars-solid" xmlns="http://www.w3.org/2000/svg" width="32.28" height="25.745" viewBox="0 0 32.28 25.745">
+                    <path id="bars-solid-2" data-name="bars-solid" d="M1.153,64.729H31.127a1.105,1.105,0,0,0,1.153-1.051V61.051A1.105,1.105,0,0,0,31.127,60H1.153A1.105,1.105,0,0,0,0,61.051v2.627A1.105,1.105,0,0,0,1.153,64.729Zm0,10.508H31.127a1.105,1.105,0,0,0,1.153-1.051V71.559a1.105,1.105,0,0,0-1.153-1.051H1.153A1.105,1.105,0,0,0,0,71.559v2.627A1.105,1.105,0,0,0,1.153,75.237Zm0,10.508H31.127a1.105,1.105,0,0,0,1.153-1.051V82.067a1.105,1.105,0,0,0-1.153-1.051H1.153A1.105,1.105,0,0,0,0,82.067v2.627A1.105,1.105,0,0,0,1.153,85.745Z" transform="translate(0 -60)" fill="#e8f5ff"/>
+                </svg>               
+            </nav>
+        </header>
+        <nav>
+            <div class="nav_container">
+                <ul class="nav_container-ul">
+                    <li><a href="{% url 'main:main' %}">HOME</a></li>
+                    <li><a href="#">SOBRE MÍ</a></li>
+                    <li><a href="#">CARTA INICIAL</a></li>
+                    <a href="{% url 'tienda:tienda' %}">TIENDA</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex_container">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <script src="{% static 'js/topBar.js' %}"></script>
+    </body> 
+</html>

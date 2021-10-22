@@ -1,0 +1,12 @@
+{% extends 'Urbano.html' %}
+{% block content %}
+    {% for object in object_list %}
+        <a href="{% url 'portfolio:paisajes_detalle' object.id %}">
+            <div class="flex">
+                <section class="flex_child ">
+                    <img src="{{object.img.url}}" alt="{{ object.titulo }}" class = "img">
+                </section>
+            </div>       
+        </a>
+    {% endfor %}
+{% endblock content %}

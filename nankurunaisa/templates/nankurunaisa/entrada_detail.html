@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'estilo-cueva-imagenes.css' %}">
+    </head>
+    <body>
+        <main class = "main">
+           
+            <img src="{{object.img.url}}" alt="{{object.titulo}}" class= "img">
+            <header class="header">
+                {% if object.nex_in_order %}
+                <a href="{{object.next_in_order.get_absolute_url}}">
+                    <svg class="flechita" xmlns="http://www.w3.org/2000/svg" width="16.363" height="26.963" viewBox="0 0 16.363 26.963">
+                        <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
+                    </svg>
+                </a>
+                
+                {% else %}
+                <a href="{% url 'main:main' %}">
+                    <svg class="flechita" xmlns="http://www.w3.org/2000/svg" width="16.363" height="26.963" viewBox="0 0 16.363 26.963">
+                        <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
+                    </svg>
+                </a>
+                {% endif %}
+                <a href="{% url 'main:main' %}" class="firma_a"><img src="{% static 'img/Firma5_0.png' %}" alt="Maviss Firm" class="firma_maviss"></a>
+                <a href="{{object.get_next_by_created.get_absolute_url}}">
+                    <svg class="flechita_delante flechita" xmlns="http://www.w3.org/2000/svg" width="16.363" height="26.963" viewBox="0 0 16.363 26.963">
+                        <path id="chevron-left-solid" d="M27.926,50.1l12-12a1.482,1.482,0,0,1,2.1,0l1.4,1.4a1.482,1.482,0,0,1,0,2.093l-9.511,9.554,9.51,9.555a1.481,1.481,0,0,1,0,2.093l-1.4,1.4a1.482,1.482,0,0,1-2.1,0l-12-12A1.482,1.482,0,0,1,27.926,50.1Z" transform="translate(-27.493 -37.662)" fill="#e8f5ff"/>
+                    </svg>
+                </a>
+            </header>
+            <article class="text">
+                <h1 class="title">{{object.titulo}}</h1>
+                <div class="paragraph">
+                    <p>
+                        {{object.texto}}
+                    </p>
+                </div>
+            </article>
+            
+        </main>
+    </body>
+</html>

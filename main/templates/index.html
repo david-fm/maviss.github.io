@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Maviss</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'estilos.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <link rel="stylesheet" href="{% static 'estilo-carta.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <div class="megacontainer">
+            <img src="{% static 'img/Galery/_MG_5381.jpg' %}" alt="Paisaje del atardecer de Cartagena" class ="background" id= "background_3" >
+            <img src="{% static 'img/Galery/_MG_5405.jpg' %}" alt="Paisaje del atardecer de Cartagena" class ="background" id = "background_2">
+            <img src="{% static 'img/_MG_4679.jpg' %}" alt="Paisaje del atardecer de Cartagena" class ="background" id="background_1">
+            <div class = "container">
+                <head>
+                    <h1>Maviss</h1>
+                    <img src="{% static 'img/Firma4_0.png' %}" alt="Maviss Firm" class="firma_maviss">
+                </head>
+                <main class="container-main">
+                    <section>
+                        <a href="{% url 'nankurunaisa:lista' %}" class = "enlace"><h2 id= "nankurunaisa">Nankurunaisa</h2></a>
+                    </section>
+                    <section>
+                        <a href="{% url 'portfolio:portfolio' %}" class = "enlace"><h2 id = "portfolio">Portfolio</h2></a>
+                    </section>
+                </main>
+            </div>
+            <div class="charla">
+                <article class = "charla-article">
+                    <p class="charla-title"><b>Bienvenido</b></p>
+                    <p class="charla-main" >
+                        <script src= "{% static 'js/lib/typed.js' %}"></script> 
+                        <span id="spannnn"></span>
+                        <script src="{% static 'js/efectoEscritura.js' %}">
+                            var static =  "{% static 'img/_MG_4679.jpg' %}";
+                        </script> 
+                    </p>
+                </article>
+            </div>
+        </div>
+        
+        <script src="{% static 'js/changeImg.js' %}">            
+        </script>
+    </body>       
+</html>

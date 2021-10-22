@@ -1,0 +1,25 @@
+.carta
+{
+    display: block;
+    position: absolute;
+    top:10vh;
+    right: 2vh;
+
+    height: 15%;
+    width: fit-content;
+
+    box-shadow: 0px 0px 10px #ffffff, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.carta-img
+{
+    height: 100%;
+    object-fit: cover;
+}
+.carta:hover
+{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
